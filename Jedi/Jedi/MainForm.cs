@@ -120,6 +120,7 @@ namespace JediUI
 		private void KeyboardHookKeyboardEvent(KeyboardEvents kEvent, Keys key)
 		{
 			mgr.Input(kEvent, key);
+            Console.WriteLine(key);
 		}
 
 		private void ListView1DoubleClick(object sender, EventArgs e)

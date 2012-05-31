@@ -96,6 +96,7 @@ namespace Jedi.Entities
 
 		public static bool IsSpecialSingleKey(this Keys keys)
 		{
+		    return !comboKeys.Contains(keys);
 			return specialSingleKeys.Any(x => x == keys);
 		}
 	}
